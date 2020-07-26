@@ -1,0 +1,37 @@
+<h1 id="lua-short-notes-and-stuffs">Lua short notes and stuffs</h1>
+<ol type="1">
+<li>Friendly syntax :D</li>
+<li>no semicolons yayayay and also no fusses over whitespaces</li>
+</ol>
+<pre><code>print &quot;no time for love&quot;
+-- same as
+print 
+&quot;no time for love&quot;</code></pre>
+<pre><code>stdin:1: unexpected symbol near &#39;1989&#39;
+Interesting. Lua doesn’t print the value by default. We can deal with that
+easily enough. You could print() or return the value explicitly, or just add an = ,
+like this:
+&gt; print(1989)
+1989
+&gt; return 1989
+1989
+&gt; =1989
+1989</code></pre>
+<p>Strings can be enclosed in ’ ’ or " " concatenation happens using .. operator</p>
+<p>and ofcourse, and stuffs work</p>
+<p>Length of string can be found using #</p>
+<pre><code>=#&#39;pewpew&#39;
+6</code></pre>
+<p>nil is default value for any variable that does not exists.</p>
+<pre><code>=alphabetagammapewpewdoesnotexist
+nil</code></pre>
+<p>exponents ^ and modulo operations %</p>
+<pre><code>Instead of Boolean operators, Lua uses the and , or , and not keywords. Conve-
+niently, logical expressions short-circuit, meaning that Lua evaluates both
+halves of an expression only if it needs to.
+&gt; =not ((true or false) and false)
+true
+&gt; =true or spill_antidote()
+true
+(No antidotes were spilled in the running of this code.)
+You can compare any values for equality and inequality with == and ~= ,</code></pre>

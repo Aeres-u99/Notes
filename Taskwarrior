@@ -1,0 +1,48 @@
+add "Pew pew" 
+add pritority:{Vh,OMG,DOIT,M,Meh,L,Pfffffft,Nope} "I shoot like a pew pew"   // ofc one of the priorities
+add "how to mwodify tasks uwu"
+--> id 10
+10 modify due:eom 
+//to remove due date
+10 modify due:
+//multiline
+add "I am not just a duck 
+        I am soopa duck and I shoot 
+        ike a pew pew"
+
+-- Projects 
+add "Honk honk" project:'Balloons and ribbons'
+
+project:"Balloons and ribbons" modify project:"balls and jumps"
+
+> Hierarchy
+
+add project:BoobyTraps.catcher "dishckkowo" \\OwO what's this? 
+
+list of projects: projects, _prokects
+
+{{Know that these are all prepended by task}}
+
+-- Tags
++home list  // list with home tag
+-home list  // list all without home tag
+tags.any: list // any tag list
+tags.none: list // list without any tags
++this +that list // list tasks with two tags
+
+-- Recurring 
+add "Donot jump on the bed" due:2015-06-08T09:00 recur:weekly
+add Pay rent due:28th recur:monthly until:now+1yr //reminder
+
+-- Priority
+task 1 modify priority:
+
+-- Filters
+entry.after:today-4days list
+ task entry:yesterday list
+ task entry.after:now-1hour list
+  task end.after:2015-05-01 and end.before:2015-05-31 completed
+
+  task end.after:today-1wk completed
+  task project:This or project:That list
+$ task rc.report.next.sort=due-,urgency- next<Paste>

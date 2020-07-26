@@ -1,0 +1,39 @@
+-- Git notes
+
+
+-- Initialise a new repo: 
+echo "# Notes" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/Aeres-u99/Notes.git
+git push -u origin master
+
+-- Pushing changes:
+
+git remote add origin https://github.com/Aeres-u99/Notes.git
+git push -u origin master
+
+「 akuma@shiro 」~/Notes ⟫  git add Git 
+「 akuma@shiro 」~/Notes ⟫  git commit -m "Added Git notes" 
+[master f8cc2ff] Added Git notes
+ 1 file changed, 17 insertions(+)
+ create mode 100644 Git
+「 akuma@shiro 」~/Notes ⟫  git push -u origin master
+Username for 'https://github.com': Aeres-u99
+Password for 'https://Aeres-u99@github.com': 
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 474 bytes | 474.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/Aeres-u99/Notes.git
+   9e43371..f8cc2ff  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+-- To remove a commit
+
+git reset --hard HEAD^
+
+
+-- Rest in help/Man (shall be added when encountered)
